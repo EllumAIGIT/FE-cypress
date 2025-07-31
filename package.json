@@ -1,0 +1,15 @@
+{
+  "name": "city_spacs_and_bookings",
+  "version": "1.0.0",
+  "description": "City Spaces And Bookings Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Damilola Oyelade",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "cypress-file-upload": "^5.0.8"
+  }
+}
