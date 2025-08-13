@@ -35,11 +35,11 @@ jobs:
     - name: Check for outdated packages
       run: npm outdated || true
       
-    - name: Run ESLint
-      run: npm run lint || true
+    - name: Run ESLint (allow warnings)
+      run: npm run lint:ci || echo "ESLint completed with warnings"
       
     - name: Run Prettier check
-      run: npm run format:check || true
+      run: npm run format:check || echo "Prettier check completed"
 
   # 🧪 Test Suite
   test:

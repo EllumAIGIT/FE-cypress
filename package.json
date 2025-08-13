@@ -15,12 +15,13 @@
     "cypress:cache:list": "cypress cache list",
     "cypress:cache:clear": "cypress cache clear",
     "lint": "eslint cypress/**/*.js",
+    "lint:ci": "eslint cypress/**/*.js --max-warnings 100",
     "lint:fix": "eslint cypress/**/*.js --fix",
     "format": "prettier --write cypress/**/*.js",
     "format:check": "prettier --check cypress/**/*.js",
     "security:audit": "npm audit --audit-level=moderate",
     "security:fix": "npm audit fix",
-    "ci:full": "npm run lint && npm run security:audit && npm run test:headless"
+    "ci:full": "npm run lint:ci && npm run security:audit && npm run test:headless"
   },
   "author": "Damilola Oyelade",
   "license": "ISC",
