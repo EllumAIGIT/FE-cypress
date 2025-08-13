@@ -22,6 +22,7 @@ module.exports = {
     'cypress/assertion-before-screenshot': 'off',
     'cypress/no-force': 'off', // Allow force: true when needed
     'cypress/require-data-selectors': 'off', // Allow other selectors
+    'cypress/unsafe-to-chain-command': 'off', // Allow chaining commands
     
     // General rules - more lenient for testing
     'no-console': 'off', // Allow console.log in tests
@@ -43,6 +44,7 @@ module.exports = {
         'cypress/assertion-before-screenshot': 'off',
         'cypress/no-force': 'off',
         'cypress/require-data-selectors': 'off',
+        'cypress/unsafe-to-chain-command': 'off', // Allow chaining in tests
         'no-console': 'off',
         'no-unused-vars': 'off', // Allow unused variables in tests
         'prefer-const': 'off', // Allow let in test loops
