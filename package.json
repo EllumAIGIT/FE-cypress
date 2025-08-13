@@ -1,15 +1,52 @@
 {
-  "name": "city_spacs_and_bookings",
+  "name": "ellum-ai-automation",
   "version": "1.0.0",
-  "description": "City Spaces And Bookings Automation",
+  "description": "Ellum AI Automation Test Suite with Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "test:headless": "cypress run --headless",
+    "test:chrome": "cypress run --browser chrome",
+    "test:firefox": "cypress run --browser firefox",
+    "test:edge": "cypress run --browser edge",
+    "test:parallel": "cypress run --parallel",
+    "cypress:verify": "cypress verify",
+    "cypress:cache:list": "cypress cache list",
+    "cypress:cache:clear": "cypress cache clear",
+    "lint": "eslint cypress/**/*.js",
+    "lint:fix": "eslint cypress/**/*.js --fix",
+    "format": "prettier --write cypress/**/*.js",
+    "format:check": "prettier --check cypress/**/*.js",
+    "security:audit": "npm audit --audit-level=moderate",
+    "security:fix": "npm audit fix",
+    "ci:full": "npm run lint && npm run security:audit && npm run test:headless"
   },
   "author": "Damilola Oyelade",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.17.0",
-    "cypress-file-upload": "^5.0.8"
-  }
+    "cypress-file-upload": "^5.0.8",
+    "mochawesome": "^7.1.3",
+    "mochawesome-report-generator": "^6.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-cypress": "^2.15.1",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "your-repository-url-here"
+  },
+  "keywords": [
+    "cypress",
+    "automation",
+    "testing",
+    "e2e",
+    "ci-cd"
+  ]
 }
